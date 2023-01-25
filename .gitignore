@@ -1,0 +1,11 @@
+# Node
+node_modules
+
+# VSCode
+.vscode
+
+# Next
+.next
+
+# Env
+.env
