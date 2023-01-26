@@ -4,12 +4,12 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 const config: DocsThemeConfig = {
   logo: <span>Nextra Docs</span>,
   project: {
-    link: "",
+    link: "https://github.com/Voxel20/nextra-demo.git",
   },
   chat: {
     link: "",
   },
-  docsRepositoryBase: "",
+  docsRepositoryBase: "https://github.com/Voxel20/nextra-demo.git/docs",
   footer: {
     text: "Nextra Docs",
   },
