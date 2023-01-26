@@ -8,24 +8,59 @@ console.log(a);
 
 ## Component
 
-import { useState } from 'react'
+import { useState } from 'react';
 
 {/* Import CSS modules */}
 import styles from '../components/counters.module.css'
 
+{/* This is an internal component written within the mdx file */}
 export const Counter = () => {
-  const [count, setCount] = useState(0);
-  return (
-    <div>
-      <button onClick={() => setCount(count + 1)} className={styles.counter}>Clicked {count} times</button>
-    </div>
-  );
-};
+const [count, setCount] = useState(0);
+return (
 
-<Counter/>
+<div>
+  <button onClick={() => setCount(count + 1)} className={styles.counter}>
+    Clicked {count} times
+  </button>
+</div>
+); };
+
+{/* You can see the component is then cast using it's name without need of an import */}
+
+<Counter />
 
 ## External Component
 
+{/* This is an external component that is imported from the component directory. */}
 import Counters from '../components/counters'
 
+{/* The component is then called using the import. */}
+
 <Counters />
+
+## HTML CSS and JS
+
+```html filename="demo.html" {1} copy
+<div class="container">
+  <h1>Heading</h1>
+  <p>Paragraph</p>
+  <aside>Here we are highlighitng the 1st line of the HTML.</aside>
+</div>
+```
+
+```css filename="demo.css" {2} copy
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin: 20px;
+}
+/* With comment support within files, this is showcasing CSS while highlighting the 2nd line. */
+```
+
+You can also write plain text between the code snippets.
+
+```js filename="demo.js" {1} copy
+let example = 'This Example is highlighting the 1st line';
+
+console.log(a);
+```
