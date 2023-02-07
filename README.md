@@ -13,11 +13,8 @@ This project is licensed under the MIT License.
 # TODO
 
 - Add Edit support for MDX files
-- Look into using Sanity CMS
-- Add live playground for code snippets
 - Use Preview API for project
 - Add support for multiple languages
-- Add support for multiple themes
 - Add role based access control or authentication
   - Add support for multiple users
   - Add multiple roles
@@ -31,3 +28,6 @@ This project is licensed under the MIT License.
 - Code Snippets with syntax highlighting
 - Easy Copy to Clipboard
 - Image Support
+- Multiple Theme Support
+- Live Playground for Code Snippets
+- ChatGPT base model page added
